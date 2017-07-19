@@ -10,6 +10,7 @@
 		B77FE90C1F1F16E4000A8D95 /* ParentFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77FE9021F1F16E3000A8D95 /* ParentFramework.framework */; };
 		B77FE9111F1F16E4000A8D95 /* ParentFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FE9101F1F16E4000A8D95 /* ParentFrameworkTests.swift */; };
 		B77FE9131F1F16E4000A8D95 /* ParentFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B77FE9051F1F16E3000A8D95 /* ParentFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B77FE9631F1F2DAD000A8D95 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77FE9621F1F2DAD000A8D95 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B77FE90B1F1F16E4000A8D95 /* ParentFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParentFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77FE9101F1F16E4000A8D95 /* ParentFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentFrameworkTests.swift; sourceTree = "<group>"; };
 		B77FE9121F1F16E4000A8D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B77FE9621F1F2DAD000A8D95 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B77FE9051F1F16E3000A8D95 /* ParentFramework.h */,
 				B77FE9061F1F16E3000A8D95 /* Info.plist */,
+				B77FE9621F1F2DAD000A8D95 /* BaseViewController.swift */,
 			);
 			path = ParentFramework;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					B77FE9011F1F16E3000A8D95 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = W539LEYXLP;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B77FE90A1F1F16E4000A8D95 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77FE9631F1F2DAD000A8D95 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +329,7 @@
 		B77FE9171F1F16E4000A8D95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W539LEYXLP;
@@ -336,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.outware.ParentFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +350,7 @@
 		B77FE9181F1F16E4000A8D95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W539LEYXLP;
@@ -362,6 +370,7 @@
 		B77FE91A1F1F16E4000A8D95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W539LEYXLP;
 				INFOPLIST_FILE = ParentFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +383,7 @@
 		B77FE91B1F1F16E4000A8D95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W539LEYXLP;
 				INFOPLIST_FILE = ParentFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +412,7 @@
 				B77FE9181F1F16E4000A8D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B77FE9191F1F16E4000A8D95 /* Build configuration list for PBXNativeTarget "ParentFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +421,7 @@
 				B77FE91B1F1F16E4000A8D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
